@@ -1,7 +1,9 @@
 <template>
-  <div id="app" class="text-light">
+  <div id="app" class="text-light font-body bg-dark min-h-dvh">
     <NavigationHeader class="mx-auto" />
-    <router-view />
+    <div class="container mx-auto px-4 max-w-5xl">
+      <router-view />
+    </div>
   </div>
 </template>
 <script>
@@ -13,8 +15,3 @@ export default {
   },
 };
 </script>
-<style>
-body {
-  @apply bg-dark;
-}
-</style>
