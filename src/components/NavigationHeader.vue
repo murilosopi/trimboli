@@ -9,18 +9,18 @@
       <li class="item">
         <router-link to="/quem-somos">Quem Somos</router-link>
       </li>
-      <li class="item">
-        Produtos e Serviços
-        <ul>
-          <li>
-            <router-link to="/gestao-imobiliaria">
-              Gestão Imobiliária
-            </router-link>
-          </li>
-          <li>
-            <router-link to="/securitizacao">Securitização</router-link>
-          </li>
-        </ul>
+      <li
+        class="item relative cursor-pointer"
+        @click="openDropdownMenu"
+        @mouseenter="openDropdownMenu"
+        @mouseleave="closeDropdownMenu"
+      >
+        Produtos e Serviços <i class="fa-solid fa-chevron-down"></i>
+        <DropdownMenu
+          :items="items"
+          ref="dropdownMenu"
+          @mouseenter.native="openDropdownMenu"
+        />
       </li>
       <li class="item">
         <router-link to="/contato">Contato</router-link>
@@ -33,8 +33,33 @@
 </template>
 
 <script>
+import DropdownMenu from "./DropdownMenu.vue";
+
 export default {
   name: "NavigationHeader",
+  components: { DropdownMenu },
+  data() {
+    return {
+      items: [
+        {
+          content: "Securitização",
+          to: "/securitizacao",
+        },
+        {
+          content: "Gestão Imobiliária",
+          to: "/gestao-imobiliaria",
+        },
+      ],
+    };
+  },
+  methods: {
+    openDropdownMenu() {
+      this.$refs.dropdownMenu.open();
+    },
+    closeDropdownMenu() {
+      this.$refs.dropdownMenu.close(1);
+    },
+  },
 };
 </script>
 
