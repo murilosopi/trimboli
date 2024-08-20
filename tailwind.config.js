@@ -10,6 +10,10 @@ module.exports = {
         dark: "#120E13",
         light: "#F2F2F2",
       },
+      fontFamily: {
+        display: ["DM Sans", "sans-serif"],
+        body: ["Cabin", "sans-serif"],
+      },
     },
   },
   plugins: [],
