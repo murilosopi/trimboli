@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="text-light font-body bg-dark min-h-dvh">
-    <NavigationHeader class="mx-auto" />
+    <NavigationHeader class="mx-auto mb-5" />
     <div class="container mx-auto px-4 max-w-5xl">
       <router-view />
     </div>
