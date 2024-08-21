@@ -9,6 +9,7 @@ module.exports = {
         "primary-muted": "#F1EB8D",
         dark: "#120E13",
         light: "#F2F2F2",
+        gray: "#373435",
       },
       fontFamily: {
         display: ["DM Sans", "sans-serif"],
