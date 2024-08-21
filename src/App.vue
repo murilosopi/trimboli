@@ -7,7 +7,7 @@
   </div>
 </template>
 <script>
-import NavigationHeader from "./components/NavigationHeader.vue";
+import NavigationHeader from "./components/layout/NavigationHeader.vue";
 
 export default {
   components: {

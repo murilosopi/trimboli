@@ -7,7 +7,7 @@
       <MainTitle
         :tag="'h2'"
         class="mb-1"
-        :class="`m${alignment.charAt(0)}-4`"
+        :class="alignment == 'right' ? 'mr-4' : 'ml-4'"
         >{{ title }}</MainTitle
       >
       <div class="h-1 w-full bg-primary absolute bottom-0 growWidth"></div>

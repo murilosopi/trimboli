@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import DropdownMenu from "./DropdownMenu.vue";
+import DropdownMenu from "../common/DropdownMenu.vue";
 
 export default {
   name: "NavigationHeader",

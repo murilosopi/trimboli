@@ -1,17 +1,20 @@
 <template>
-  <article class="home">
+  <section class="home">
     <MainTitle :tag="'h1'" class="text-center">
       <i class="fas fa-users"></i>
       Quem somos
     </MainTitle>
-  </article>
+
+    <AboutArticles />
+  </section>
 </template>
 
 <script>
-import MainTitle from "@/components/MainTitle.vue";
+import AboutArticles from "@/components/layout/AboutArticles.vue";
+import MainTitle from "@/components/common/MainTitle.vue";
 
 export default {
   name: "AboutView",
-  components: { MainTitle },
+  components: { MainTitle, AboutArticles },
 };
 </script>
