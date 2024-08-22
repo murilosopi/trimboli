@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="grid grid-cols-2 gap-5">
     <CardBox :img="images.mission" title="Missão">
       <p>
         Proporcionar soluções inovadoras e confiáveis em securitização, locação
@@ -18,7 +18,7 @@
       </p>
     </CardBox>
 
-    <CardBox :img="images.values" title="Valores">
+    <CardBox :img="images.values" title="Valores" class="col-span-2">
       <dl class="grid grid-cols-2 gap-10 text-center">
         <div>
           <MainTitle tag="dt" class="text-xl">
@@ -72,10 +72,33 @@
 </template>
 
 <script>
+import missionImage from "@/assets/img/compass.png";
+import visionImage from "@/assets/img/buildings.png";
+import valueImage from "@/assets/img/handshake.png";
+
 import CardBox from "@/components/common/CardBox.vue";
+import MainTitle from "@/components/common/MainTitle.vue";
 
 export default {
   name: "AboutCards",
-  components: { CardBox },
+  components: { CardBox, MainTitle },
+  data() {
+    return {
+      images: {
+        mission: {
+          source: missionImage,
+          alt: "Bússula",
+        },
+        vision: {
+          source: visionImage,
+          alt: "Prédios",
+        },
+        values: {
+          source: valueImage,
+          alt: "Aperto de mãos",
+        },
+      },
+    };
+  },
 };
 </script>
