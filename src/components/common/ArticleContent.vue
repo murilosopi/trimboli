@@ -13,8 +13,10 @@
       <div class="h-1 w-full bg-primary absolute bottom-0 growWidth"></div>
       <div class="w-1 bg-primary absolute bottom-0 growHeight"></div>
     </div>
-    <div :class="['text-lg', `text-${alignment}`]">
-      <slot name="content"></slot>
+    <div
+      :class="['text-lg', alignment == 'right' ? 'text-right' : 'text-left']"
+    >
+      <slot></slot>
     </div>
   </article>
 </template>
