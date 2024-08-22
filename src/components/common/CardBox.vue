@@ -1,15 +1,22 @@
 <template>
-  <article class="bg-gray">
+  <article class="bg-gray rounded-sm">
     <div>
-      <img v-if="img" :src="img" alt="" />
+      <img
+        v-if="img"
+        :src="img.source"
+        :alt="img.alt"
+        class="w-full h-56 object-cover"
+      />
     </div>
     <div class="p-7">
       <MainTitle
         tag="h3"
-        class="text-3xl border-b-4 border-primary mx-auto w-fit mb-4"
+        class="text-3xl border-b-4 border-primary mx-auto w-fit mb-6"
         >{{ title }}</MainTitle
       >
-      <slot name="content"></slot>
+      <div class="text-lg">
+        <slot></slot>
+      </div>
     </div>
   </article>
 </template>
@@ -20,7 +27,12 @@ import MainTitle from "./MainTitle.vue";
 export default {
   name: "CardBox",
   props: {
-    img: String,
+    img: {
+      type: Object,
+      validator({ source, alt }) {
+        return [source, alt].every((v) => v);
+      },
+    },
     title: String,
   },
   components: { MainTitle },
