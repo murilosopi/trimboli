@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-2 gap-5">
+  <div class="grid md:grid-cols-2 grid-cols-1 gap-5">
     <CardBox :img="images.mission" title="Missão">
       <p>
         Proporcionar soluções inovadoras e confiáveis em securitização, locação
@@ -18,8 +18,8 @@
       </p>
     </CardBox>
 
-    <CardBox :img="images.values" title="Valores" class="col-span-2">
-      <dl class="grid grid-cols-2 gap-10 text-center">
+    <CardBox :img="images.values" title="Valores" class="md:col-span-2">
+      <dl class="grid sm:grid-cols-2 gap-10 text-center">
         <div>
           <MainTitle tag="dt" class="text-xl">
             <i class="fa-solid fa-eye mr-1"></i>
