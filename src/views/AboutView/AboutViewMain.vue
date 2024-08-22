@@ -19,7 +19,7 @@ import AboutArticles from "./fragments/AboutArticles.vue";
 import AboutCards from "./fragments/AboutCards.vue";
 
 export default {
-  name: "AboutView",
+  name: "AboutViewMain",
   components: { MainTitle, AboutArticles, AboutCards },
 };
 </script>
