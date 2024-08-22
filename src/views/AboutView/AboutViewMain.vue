@@ -14,7 +14,7 @@ import AboutArticles from "@/views/AboutView/fragments/AboutArticles.vue";
 import MainTitle from "@/components/common/MainTitle.vue";
 import missionImage from "@/assets/img/compass.png";
 import visionImage from "@/assets/img/buildings.png";
-import valueImage from "@/assets/img/holding-hand.png";
+import valueImage from "@/assets/img/handshake.png";
 
 export default {
   name: "AboutView",
@@ -24,15 +24,15 @@ export default {
       images: {
         mission: {
           source: missionImage,
-          alt: "auau",
+          alt: "Bússula",
         },
         vision: {
           source: visionImage,
-          alt: "auau",
+          alt: "Prédios",
         },
         values: {
           source: valueImage,
-          alt: "auau",
+          alt: "Aperto de mãos",
         },
       },
     };
