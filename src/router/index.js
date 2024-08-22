@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import AboutView from "../views/AboutView.vue";
+import AboutView from "../views/AboutView/AboutViewMain.vue";
 
 Vue.use(VueRouter);
 

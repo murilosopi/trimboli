@@ -1,7 +1,7 @@
 <template>
   <div>
     <ArticleContent title="Nossa essência" alignment="left" class="mt-12">
-      <p slot="content">
+      <p>
         A <strong>Trimboli</strong> é uma empresa especializada em soluções de
         securitização, locação e administração de imóveis, comprometida em
         oferecer serviços de alta qualidade e confiança. Com uma trajetória
@@ -17,7 +17,7 @@
       alignment="right"
       class="mt-12"
     >
-      <p slot="content">
+      <p>
         Com uma equipe de profissionais altamente qualificados e uma
         infraestrutura robusta, a Trimboli se destaca no mercado por sua
         capacidade de adaptação e inovação. Trabalhamos continuamente para
@@ -34,7 +34,7 @@
       alignment="left"
       class="mt-12"
     >
-      <p slot="content">
+      <p>
         Acreditamos que nosso sucesso está diretamente ligado ao sucesso de
         nossos clientes. Por isso, nos dedicamos a entender profundamente suas
         necessidades, oferecendo soluções personalizadas que atendem às demandas
@@ -47,7 +47,7 @@
 </template>
 
 <script>
-import ArticleContent from "../common/ArticleContent.vue";
+import ArticleContent from "@/components/common/ArticleContent.vue";
 
 export default {
   name: "AboutArticles",
