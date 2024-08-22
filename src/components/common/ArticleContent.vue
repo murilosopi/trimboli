@@ -1,7 +1,11 @@
 <template>
-  <article :class="alignment">
+  <article>
     <div
-      :class="alignment == 'right' ? ['flex-row-reverse', 'ml-auto'] : []"
+      :class="
+        alignment == 'right'
+          ? ['flex-row-reverse', 'ml-auto', 'text-right']
+          : 'text-left'
+      "
       class="flex mb-3 relative w-fit"
     >
       <MainTitle
@@ -14,7 +18,8 @@
       <div class="w-1 bg-primary absolute bottom-0 growHeight"></div>
     </div>
     <div
-      :class="['text-lg', alignment == 'right' ? 'text-right' : 'text-left']"
+      class="text-lg"
+      :class="alignment == 'right' ? 'text-right' : 'text-left'"
     >
       <slot></slot>
     </div>
