@@ -8,6 +8,7 @@
         class="w-full h-56"
         :style="{
           objectFit: image.fit,
+          backgroundColor: image.color || 'transparent',
         }"
       />
     </div>
