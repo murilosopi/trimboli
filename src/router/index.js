@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import AboutView from "../views/AboutView/AboutViewMain.vue";
+import SecuritizationView from "../views/SecuritizationView/SecuritizationViewMain.vue";
 
 Vue.use(VueRouter);
 
@@ -10,6 +11,11 @@ const routes = [
     path: "/quem-somos",
     name: "about",
     component: AboutView,
+  },
+  {
+    path: "/securitizacao",
+    name: "securitization",
+    component: SecuritizationView,
   },
 ];
 
