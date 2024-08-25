@@ -2,10 +2,13 @@
   <article class="bg-gray rounded-sm">
     <div>
       <img
-        v-if="img"
-        :src="img.source"
-        :alt="img.alt"
-        class="w-full h-56 object-cover"
+        v-if="image"
+        :src="image.source"
+        :alt="image.alt"
+        class="w-full h-56"
+        :style="{
+          objectFit: image.fit,
+        }"
       />
     </div>
     <div class="p-7">
@@ -27,10 +30,12 @@ import MainTitle from "./MainTitle.vue";
 export default {
   name: "CardBox",
   props: {
-    img: {
+    image: {
       type: Object,
-      validator({ source, alt }) {
-        return [source, alt].every((v) => v);
+      validator({ source, alt, fit = "cover" }) {
+        return (
+          [source, alt].every((v) => v) && ["cover", "contain"].includes(fit)
+        );
       },
     },
     title: String,
