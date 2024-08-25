@@ -1,6 +1,6 @@
 <template>
   <div class="grid md:grid-cols-2 grid-cols-1 gap-5">
-    <CardBox :img="images.mission" title="Missão">
+    <CardBox :image="images.mission" title="Missão">
       <p>
         Proporcionar soluções inovadoras e confiáveis em securitização, locação
         e administração de imóveis, comprometendo-nos com a excelência e a
@@ -9,7 +9,7 @@
       </p>
     </CardBox>
 
-    <CardBox :img="images.vision" title="Visão">
+    <CardBox :image="images.vision" title="Visão">
       <p>
         Ser reconhecida como a empresa líder no mercado de securitização e
         gestão imobiliária, estabelecendo novos padrões de qualidade e
@@ -18,7 +18,7 @@
       </p>
     </CardBox>
 
-    <CardBox :img="images.values" title="Valores" class="md:col-span-2">
+    <CardBox :image="images.values" title="Valores" class="md:col-span-2">
       <dl class="grid sm:grid-cols-2 gap-10 text-center">
         <div>
           <MainTitle tag="dt" class="text-xl">
@@ -88,14 +88,17 @@ export default {
         mission: {
           source: missionImage,
           alt: "Bússula",
+          fit: "cover",
         },
         vision: {
           source: visionImage,
           alt: "Prédios",
+          fit: "cover",
         },
         values: {
           source: valueImage,
           alt: "Aperto de mãos",
+          fit: "cover",
         },
       },
     };
