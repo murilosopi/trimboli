@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <ArticleContent title="Nossa essência" alignment="left" class="mt-12">
+  <div class="flex flex-col gap-12">
+    <ArticleContent title="Nossa essência" alignment="left">
       <p>
         A <strong>Trimboli</strong> é uma empresa especializada em soluções de
         securitização, locação e administração de imóveis, comprometida em
@@ -12,11 +12,7 @@
       </p>
     </ArticleContent>
 
-    <ArticleContent
-      title="Inovação e qualificação"
-      alignment="right"
-      class="mt-12"
-    >
+    <ArticleContent title="Inovação e qualificação" alignment="right">
       <p>
         Com uma equipe de profissionais altamente qualificados e uma
         infraestrutura robusta, a Trimboli se destaca no mercado por sua
@@ -29,11 +25,7 @@
       </p>
     </ArticleContent>
 
-    <ArticleContent
-      title="Compromisso com a excelência"
-      alignment="left"
-      class="mt-12"
-    >
+    <ArticleContent title="Compromisso com a excelência" alignment="left">
       <p>
         Acreditamos que nosso sucesso está diretamente ligado ao sucesso de
         nossos clientes. Por isso, nos dedicamos a entender profundamente suas
