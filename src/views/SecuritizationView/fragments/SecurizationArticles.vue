@@ -9,6 +9,24 @@
         comprometer a segurança dos ativos.
       </p>
     </ArticleContent>
+    <ArticleContent title="Antecipação de Recebíveis">
+      <p>
+        A antecipação de recebíveis é uma forma eficaz de obter capital imediato
+        sobre valores de títulos, como cheques, duplicatas e notas promissórias.
+        Por meio desse serviço, a Trimboli proporciona aos seus clientes a
+        possibilidade de receber antecipadamente os recursos de vendas feitas a
+        prazo. Essa ferramenta é amplamente utilizada por empresas para garantir
+        a continuidade de suas operações e manter um fluxo de caixa saudável.
+      </p>
+      <p>
+        Ao optar por esse serviço, as empresas podem garantir a continuidade de
+        suas operações sem comprometer sua saúde financeira. No entanto, é
+        importante estar atento aos encargos cobrados, que variam de empresa
+        para empresa. Na Trimboli, buscamos oferecer as melhores taxas do
+        mercado, proporcionando um serviço competitivo e vantajoso para nossos
+        clientes.
+      </p>
+    </ArticleContent>
     <ArticleContent title="Gestão de Riscos">
       <p>
         Na Trimboli, desenvolvemos e emitimos títulos que atendem às
@@ -43,6 +61,7 @@
           source: require('@/assets/img/smartfactor.png'),
           fit: 'contain',
           alt: 'SmartFactor logo',
+          color: 'white',
         }"
         title="SmartFactor"
       >
