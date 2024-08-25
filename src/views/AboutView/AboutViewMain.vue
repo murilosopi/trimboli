@@ -1,7 +1,7 @@
 <template>
   <section class="home">
     <ContainerView>
-      <MainTitle :tag="'h1'" class="text-center">
+      <MainTitle :tag="'h1'" class="text-center mb-12">
         <i class="fas fa-users"></i>
         Quem somos
       </MainTitle>
