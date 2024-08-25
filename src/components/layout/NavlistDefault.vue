@@ -10,7 +10,12 @@
       @mouseleave="closeDropdownMenu"
     >
       Produtos e Serviços <i class="fa-solid fa-chevron-down"></i>
-      <DropdownMenu ref="dropdownMenu" @mouseenter.native="openDropdownMenu">
+
+      <DropdownMenu
+        ref="dropdownMenu"
+        @mouseenter.native="openDropdownMenu"
+        class="!w-full mt-1"
+      >
         <DropdownOption
           v-for="{ to, content } in servicesAndProdutcts"
           :key="to"
@@ -63,7 +68,7 @@ export default {
 
 <style scoped>
 .item {
-  @apply border-b border-light hover:border-primary-muted hover:text-primary-muted pb-2 transition-all duration-150;
+  @apply border-b border-light hover:border-primary-muted hover:text-primary-muted pb-2 transition-all;
 }
 
 .item:has(.router-link-exact-active) {
