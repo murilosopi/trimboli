@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import AboutView from "../views/AboutView/AboutViewMain.vue";
 import SecuritizationView from "../views/SecuritizationView/SecuritizationViewMain.vue";
+import BuildingManagementView from "../views/BuildingManagementView/BuildingManagementViewMain.vue";
 
 Vue.use(VueRouter);
 
@@ -16,6 +17,11 @@ const routes = [
     path: "/securitizacao",
     name: "securitization",
     component: SecuritizationView,
+  },
+  {
+    path: "/gestao-imobiliaria",
+    name: "building-management",
+    component: BuildingManagementView,
   },
 ];
 
