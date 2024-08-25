@@ -1,5 +1,5 @@
 <template>
-  <li class="px-3 py-2 inline-block text-dark">
+  <li class="px-3 py-2 text-dark">
     <slot></slot>
   </li>
 </template>
