@@ -6,15 +6,18 @@
       <img src="@/assets/img/dark-trimboli-logo.svg" alt="Trimboli Logo" />
     </figure>
 
+    <NavlistDropdown class="block md:hidden" />
+
     <NavlistDefault class="hidden md:flex" />
   </nav>
 </template>
 
 <script>
 import NavlistDefault from "./NavlistDefault.vue";
+import NavlistDropdown from "./NavlistDropdown.vue";
 
 export default {
   name: "NavigationHeader",
-  components: { NavlistDefault },
+  components: { NavlistDefault, NavlistDropdown },
 };
 </script>
