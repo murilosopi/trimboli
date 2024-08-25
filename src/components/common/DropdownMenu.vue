@@ -1,7 +1,12 @@
 <template>
   <transition name="fade">
     <ul
-      class="absolute top-12 drop-shadow-sm text-sm bg-light p-2 w-full text-center rounded-sm"
+      class="absolute top-full w-max rounded-sm drop-shadow-sm text-sm bg-light p-2 text-center transition-all"
+      :class="{
+        'left-0': alignment == 'start',
+        'right-0': alignment == 'end',
+        'right-2/4 translate-x-1/2': alignment == 'center',
+      }"
       v-show="isVisible"
       @mouseleave="close"
     >
@@ -11,10 +16,19 @@
 </template>
 
 <script>
+import "@/styles/transitions/fade.css";
+
 export default {
   name: "DropdownMenu",
   props: {
     items: Array,
+    alignment: {
+      type: String,
+      default: "end",
+      validator(value) {
+        return ["end", "start", "center"].includes(value);
+      },
+    },
   },
   data() {
     return {
@@ -38,13 +52,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.2s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
-</style>
