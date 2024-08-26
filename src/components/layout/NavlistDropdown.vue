@@ -28,9 +28,6 @@
       <DropdownOption>
         <router-link to="/contato">Contato</router-link>
       </DropdownOption>
-      <DropdownOption>
-        <router-link to="/faq">Perguntas Frequentes</router-link>
-      </DropdownOption>
     </DropdownMenu>
   </div>
 </template>

@@ -20,15 +20,14 @@
           v-for="{ to, content } in servicesAndProdutcts"
           :key="to"
         >
-          <router-link :to="to"> {{ content }}</router-link>
+          <router-link class="[&.router-link-exact-active]:font-bold" :to="to">
+            {{ content }}</router-link
+          >
         </DropdownOption>
       </DropdownMenu>
     </li>
     <li class="item">
       <router-link to="/contato">Contato</router-link>
-    </li>
-    <li class="item">
-      <router-link to="/faq">Perguntas Frequentes</router-link>
     </li>
   </ul>
 </template>
