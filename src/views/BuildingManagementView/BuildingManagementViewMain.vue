@@ -14,7 +14,9 @@
         cada propriedade seja administrada com máxima eficiência, desde a
         seleção de inquilinos até a manutenção e a gestão financeira.
       </p>
-      <MainButton>torne-se nosso cliente</MainButton>
+      <MainButton @click.native="becomeBuildingManagementCostumer"
+        >torne-se nosso cliente</MainButton
+      >
     </BannerContainer>
 
     <ContainerView>
@@ -29,6 +31,7 @@ import MainTitle from "@/components/common/MainTitle.vue";
 import ContainerView from "@/components/layout/ContainerView.vue";
 import BuldingManagementArticles from "./fragments/BuldingManagementArticles.vue";
 import MainButton from "@/components/common/MainButton.vue";
+import ContactMixin from "@/mixins/ContactMixin";
 export default {
   name: "BuldingManagementViewMain",
   components: {
@@ -38,5 +41,6 @@ export default {
     ContainerView,
     MainButton,
   },
+  mixins: [ContactMixin],
 };
 </script>

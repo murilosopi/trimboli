@@ -15,7 +15,9 @@
         combina expertise técnica e uma compreensão profunda das necessidades de
         nossos clientes.
       </p>
-      <MainButton>torne-se nosso cliente</MainButton>
+      <MainButton @click.native="becomeSecuritizationCostumer"
+        >torne-se nosso cliente</MainButton
+      >
     </BannerContainer>
 
     <ContainerView>
@@ -30,7 +32,9 @@ import MainTitle from "@/components/common/MainTitle.vue";
 import ContainerView from "@/components/layout/ContainerView.vue";
 import SecurizationArticles from "./fragments/SecurizationArticles.vue";
 import MainButton from "@/components/common/MainButton.vue";
+import ContactMixin from "@/mixins/ContactMixin";
 export default {
+  mixins: [ContactMixin],
   name: "SecurizationViewMain",
   components: {
     BannerContainer,
