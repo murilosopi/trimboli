@@ -4,7 +4,7 @@
       :image="require('@/assets/img/building-darken.png')"
       class="mb-14"
     >
-      <MainTitle class="mb-10">
+      <MainTitle :tag="'h1'" class="mb-10">
         <i class="fa-solid fa-gears"></i>
         Gestão Imobiliária
       </MainTitle>
