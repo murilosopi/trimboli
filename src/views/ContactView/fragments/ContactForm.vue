@@ -31,7 +31,7 @@
         class="sm:col-span-2"
         label="Especifíque"
         type="text"
-        v-model="customSubject"
+        v-model="subjectSpecify"
         v-if="subject == 'other'"
       />
       <InputField
@@ -53,43 +53,77 @@
 <script>
 import InputField from "@/components/common/InputField.vue";
 import MainButton from "@/components/common/MainButton.vue";
-
+import ContactMixin from "@/mixins/ContactMixin";
 import "@/styles/transitions/fade.css";
 
 export default {
+  mixins: [ContactMixin],
   name: "ContactForm",
   components: {
     InputField,
     MainButton,
   },
-  data() {
-    return {
-      name: "",
-      tel: "",
-      email: "",
-      subject: "",
-      customSubject: "",
-      service: "",
-      message: "",
-    };
-  },
-  watch: {
-    subject() {
-      this.customSubject = "";
-      this.service = "";
+  computed: {
+    name: {
+      get() {
+        return this.$store.state.contact.name;
+      },
+      set(value) {
+        this.updateName(value);
+      },
+    },
+    tel: {
+      get() {
+        return this.$store.state.contact.tel;
+      },
+      set(value) {
+        this.updateTel(value);
+      },
+    },
+    email: {
+      get() {
+        return this.$store.state.contact.email;
+      },
+      set(value) {
+        this.updateEmail(value);
+      },
+    },
+    subject: {
+      get() {
+        return this.$store.state.contact.subject;
+      },
+      set(value) {
+        this.updateSubject(value);
+      },
+    },
+    subjectSpecify: {
+      get() {
+        return this.$store.state.contact.subjectSpecify;
+      },
+      set(value) {
+        this.updateSubjectSpecify(value);
+      },
+    },
+    service: {
+      get() {
+        return this.$store.state.contact.service;
+      },
+      set(value) {
+        this.updateService(value);
+      },
+    },
+    message: {
+      get() {
+        return this.$store.state.contact.message;
+      },
+      set(value) {
+        this.updateMessage(value);
+      },
     },
   },
   methods: {
-    reset() {
-      for (let name in this.fields) {
-        this.fields[name] = "";
-      }
-    },
-    send() {
-      // to do
-      alert("Sucesso!");
-      this.reset();
-    },
+    reset() {},
+    send() {},
   },
 };
 </script>
