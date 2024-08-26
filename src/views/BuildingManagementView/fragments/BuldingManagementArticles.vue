@@ -50,10 +50,12 @@
         title="Accordous"
       >
         <p>
-          O <strong>Accordous</strong> é a plataforma ideal para a gestão de
-          imóveis, oferecendo uma solução completa para locação e administração.
-          Simplifique o gerenciamento de contratos, manutenção e pagamentos,
-          tudo em um único lugar, com total segurança e facilidade.
+          O <strong>Accordous</strong> é uma plataforma intuitiva que simplifica
+          o acesso à 2ª via de faturas e boletos, garantindo que nossos clientes
+          possam gerenciar suas necessidades financeiras com agilidade e
+          segurança. Com uma interface prática e eficiente, o Accordous oferece
+          uma experiência fluida, colocando o controle financeiro ao alcance de
+          suas mãos.
         </p>
 
         <div class="flex mt-9">
