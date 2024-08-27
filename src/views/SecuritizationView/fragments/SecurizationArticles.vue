@@ -90,7 +90,7 @@
               </DropdownOption>
               <DropdownOption>
                 <a href="https://www.smartfactor.com.br/smart/" target="_blank"
-                  >admnistrador</a
+                  >administrador</a
                 >
               </DropdownOption>
             </template>

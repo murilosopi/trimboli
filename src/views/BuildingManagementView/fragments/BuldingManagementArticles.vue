@@ -77,7 +77,7 @@
               </DropdownOption>
               <DropdownOption>
                 <a href="https://accordous.digital/login" target="_blank"
-                  >admnistrador</a
+                  >administrador</a
                 >
               </DropdownOption>
             </template>
